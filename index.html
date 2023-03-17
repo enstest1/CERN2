@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CERN - Interdimensional Reptilian NFT Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* CSS styles go here */
+      body {
+        background-color: #1d1e22;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+      }
+
+      header {
+        background-color: #23242a;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .banner {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 500px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+
+      .gallery img {
+        width: 33.33%;
+        cursor: pointer;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .modal-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .modal-content p {
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .close {
+        color: #fff;
+        float: right;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .social a {
+        margin: 0 20px;
+      }
+
+      .social img {
+        width: 50px;
+        height: auto;
+      }
+
+      footer {
+        background-color: #1a1b1f;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav {
+          margin-bottom: 20px;
+        }
+
+        .banner {
+          margin-top: 20px;
+        }
+
+        .gallery {
+          display: block;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <h1>CERN</h1>
+        <p>Interdimensional Reptilian NFT Project</p>
+      </div>
+    </header>
+
+    <main>
+      <h2>About CERN</h2>
+      <p>CERN is a NFT project that explores the concept of interdimensional reptilians taking over earth. Our NFTs are designed to showcase the different ways in which these reptilians have infiltrated our society.</p>
+
+      <h2>Our Team</h2>
+      <p>We are a team of passionate developers and artists who believe in the power of NFTs to tell compelling stories. Our goal is to create unique and thought-provoking NFTs that will capture the imagination of our audience.</p>
+
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" id="myImg" />
+        <img src="image2.jpg" alt="Image 2" id="myImg2" />
+        <img src="image3.jpg" alt="Image 3" id="myImg3" />
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img src="" alt="Modal Image" id="img01" />
+          <p id="caption"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="discord.png" alt="Discord" /></a>
+      </div>
+      <p>&copy; 2023 CERN NFT Project</p>
+    </footer>
+
+    <script>
+      // JavaScript code goes here
+      var modal = document.getElementById("myModal");
+      var img1 = document.getElementById("myImg");
+      var img2 = document.getElementById("myImg2");
+      var img3 = document.getElementById("myImg3");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      var span = document.getElementsByClassName("close")[0];
+
+      // Add click event listeners to the images
+      img1.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+      img2.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+      img3.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt
