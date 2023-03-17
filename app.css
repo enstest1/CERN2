@@ -7,11 +7,11 @@
 
 /* Global Styles */
 body {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Poppins', sans-serif;
 	color: #333;
 	background-color: #f5f5f5;
-	font-size: 22px;
-	line-height: 1.5;
+	font-size: 15px;
+	line-height: 2;
 }
 
 a {
