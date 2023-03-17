@@ -89,7 +89,6 @@ nav ul li a:hover {
 	text-shadow: 2px 2px 2px #fff;
 }
 
-/* Hero Section */
 .hero-section {
 	background-image: url('https://i.ibb.co/RSMPb0B/Banner.png');
 	background-size: cover;
@@ -99,9 +98,14 @@ nav ul li a:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 50px; /* adds 50 pixels of padding to all sides of the section */
-  	text-align: center; /* centers all the content within the section horizontally *
+	padding: 50px;
+	text-align: center;
 }
+
+.view-collection {
+	margin-top: 75px; /* increase the margin top to move the button down */
+}
+
 
 .hero-section h1 {
 	font-size: 72px;
