@@ -48,12 +48,10 @@ header {
 	opacity: 0.8; /* set the opacity to 80% */
 }
 
-.logo {
-  width: 100%;
-  text-align: center;
-  font-weight: 600;
-  font-size: 36px;
 
+.logo {
+	font-weight: 600;
+	font-size: 36px;
 }
 
 .logo a {
@@ -105,8 +103,10 @@ nav ul li a:hover {
 }
 
 .view-collection {
-	margin-top: 300px; /* move the button down by 300 pixels */
+	margin-top: 100px; /* increase the margin top to move the button down */
 }
+
+
 
 .hero-section h1 {
 	font-size: 72px;
@@ -116,13 +116,11 @@ nav ul li a:hover {
 	text-shadow: 2px 2px 2px #ccc;
 }
 
-.hero-section h1 span {
-	display: block;
+.hero-section {
+  padding: 50px; /* adds 50 pixels of padding to all sides of the section */
+  text-align: center; /* centers all the content within the section horizontally */
 }
 
-.hero-section h1 span:nth-of-type(2) {
-	text-align: center; /* center the "CERN" text */
-}
 
 .tagline {
 	font-size: 36px;
@@ -142,4 +140,26 @@ nav ul li a:hover {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	border: none;
-	cursor: pointer
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-shadow: 2px 2px 2px #ccc;
+}
+
+.cta-button:hover {
+	background-color: #ccc;
+	color: #F85DFF;
+	text-shadow: 3px 3px 3px #fff;
+	transform: scale(1.1);
+}
+
+/* About Section */
+.about-section {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.about-section h2 {
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	text-shadow: 2px 2
