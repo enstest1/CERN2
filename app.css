@@ -42,7 +42,11 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	border-radius: 20px; /* adds round corners */
+	background-image: url('https://cdn.polyhaven.com/asset_img/primary/aerial_beach_01.png?height=780'); /* adds texture */
+	background-repeat: repeat; /* repeats the texture */
 }
+
 
 .logo {
 	font-weight: 600;
