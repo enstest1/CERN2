@@ -31,7 +31,7 @@ a:hover {
 
 /* Header */
 header {
-	background-color: #F85DFF;
+	background-color: rgba(248, 93, 255, 0.8); /* set the background color with alpha channel */
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	position: fixed;
 	top: 0;
@@ -42,9 +42,10 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	border-radius: 20px; /* adds round corners */
-	background-image: url('https://cdn.polyhaven.com/asset_img/primary/aerial_beach_01.png?height=780'); /* adds texture */
-	background-repeat: repeat; /* repeats the texture */
+	border-radius: 20px;
+	background-image: url('texture.jpg');
+	background-repeat: repeat;
+	opacity: 0.8; /* set the opacity to 80% */
 }
 
 
