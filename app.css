@@ -104,6 +104,12 @@ nav ul li a:hover {
 	text-shadow: 2px 2px 2px #ccc;
 }
 
+.hero-section {
+  padding: 50px; /* adds 50 pixels of padding to all sides of the section */
+  text-align: center; /* centers all the content within the section horizontally */
+}
+
+
 .tagline {
 	font-size: 36px;
 	font-weight: 400;
