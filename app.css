@@ -97,20 +97,15 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end; /* align button to bottom of section */
 	padding: 50px;
 	text-align: center;
 	margin-top: 100px; /* add margin to push section below header */
 	margin-bottom: 0;
-	position: relative; /* make the hero-section a positioned element */
 }
 
 .view-collection {
-	position: absolute; /* make the button an absolutely positioned element */
-	bottom: 0; /* position the button at the bottom of the section */
-	margin-bottom: 50px; /* add margin between the button and the bottom of the section */
-	left: 50%; /* position the button in the horizontal center of the section */
-	transform: translateX(-50%); /* center the button using a horizontal translation */
+	margin-top: 30px; /* decrease the margin top to make the button lower */
 }
 
 .hero-section h1 {
@@ -122,9 +117,10 @@ nav ul li a:hover {
 }
 
 .hero-section {
-	padding: 50px; /* adds 50 pixels of padding to all sides of the section */
-	text-align: center; /* centers all the content within the section horizontally
-	
+  padding: 50px; /* adds 50 pixels of padding to all sides of the section */
+  text-align: center; /* centers all the content within the section horizontally */
+}
+
 .tagline {
 	font-size: 36px;
 	font-weight: 400;
@@ -135,8 +131,4 @@ nav ul li a:hover {
 
 .cta-button {
 	background-color: #F85DFF;
-	color: #fff;
-	padding: 20px 40px;
-	border-radius: 30px;
-	font-size: 24
-
+	color
