@@ -124,4 +124,19 @@ nav ul li a:hover {
 .hero-section {
 	padding: 50px; /* adds 50 pixels of padding to all sides of the section */
 	text-align: center; /* centers all the content within the section horizontally
+	
+.tagline {
+	font-size: 36px;
+	font-weight: 400;
+	color: #F85DFF;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+.cta-button {
+	background-color: #F85DFF;
+	color: #fff;
+	padding: 20px 40px;
+	border-radius: 30px;
+	font-size: 24
 
