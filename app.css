@@ -42,7 +42,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	border-radius: 20px 20px 0 0; /* make the top corners round */
+	border-radius: 20px;
 	background-image: url('texture.jpg');
 	background-repeat: repeat;
 	opacity: 0.8; /* set the opacity to 80% */
@@ -100,14 +100,11 @@ nav ul li a:hover {
 	justify-content: center;
 	padding: 50px;
 	text-align: center;
-	margin-top: 0; /* remove the top margin to make it flush with the header */
 }
 
 .view-collection {
-	margin-top: 100px;
+	margin-top: 200px; /* increase the margin top to move the button down */
 }
-
-
 
 .hero-section h1 {
 	font-size: 72px;
@@ -118,10 +115,9 @@ nav ul li a:hover {
 }
 
 .hero-section {
-  padding: 50px;
-  text-align: center;
+	padding: 50px; /* adds 50 pixels of padding to all sides of the section */
+	text-align: center; /* centers all the content within the section horizontally */
 }
-
 
 .tagline {
 	font-size: 36px;
@@ -140,4 +136,18 @@ nav ul li a:hover {
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	border
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-shadow: 2px 2px 2px #ccc;
+	position: relative;
+	z-index: 1;
+}
+
+.cta-button:hover {
+	background-color: #ccc;
+	color: #F85DFF;
+	text-shadow: 3px 3px 3px #fff;
+	transform: scale(1.1);
+}
+
