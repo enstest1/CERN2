@@ -129,7 +129,8 @@ nav ul li a:hover {
 	color: #F85DFF;
 	margin-bottom: 30px;
 	text-shadow: 1px 1px 1px #ccc;
-	
+}
+
 .cta-button {
 	background-color: #F85DFF;
 	color: #fff;
@@ -143,17 +144,26 @@ nav ul li a:hover {
 	cursor: pointer;
 	transition: all 0.3s ease;
 	text-shadow: 2px 2px 2px #ccc;
-	position: relative; /* add relative position to the button */
-	z-index: 1; /* set a higher z-index to make the button appear on top of the banner */
-	margin-top: -100px; /* move the button up to sit on top of the banner */
+	position: relative;
+	z-index: 1;
 }
 
-.cta-button:hover {
-	background-color: #ccc;
-	color: #F85DFF;
-	text-shadow: 3px 3px 3px #fff;
-	transform: scale(1.1);
+.cta-button::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	border-radius: 40px;
+	background: linear-gradient(45deg, #F85DFF, #FFA33E);
+	filter: blur(20px);
+	opacity: 0;
+	transition: all 0.3s ease;
+	z-index: -1;
 }
 
-
+.cta-button:hover::before {
+	opacity: 1;
+}
 
