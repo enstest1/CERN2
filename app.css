@@ -33,7 +33,7 @@ a:hover {
 header {
 	background-color: rgba(248, 93, 255, 0.8); /* set the background color with alpha channel */
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -100,7 +100,7 @@ nav ul li a:hover {
 	justify-content: center;
 	padding: 50px;
 	text-align: center;
-	margin-top: 0;
+	margin-top: 100px; /* add a margin-top to push the section down */
 }
 
 .view-collection {
